@@ -1,7 +1,3 @@
-let name = prompt("Ваше ім'я");
+let name = prompt("Your name");
 
-let surname = prompt("Ваше прізвище");
-
-let age = prompt("Ваш вік");
-
-console.log("Hello " + " " + name + " " + surname + " " + "age " + age);
+console.log("Hello, " + name + "! How are you?");
