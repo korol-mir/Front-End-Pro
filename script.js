@@ -5,4 +5,6 @@ const infoForUser = {
     pet: prompt('Ваша домашня тваринна'),
 };
 
-console.log(infoForUser);
+for(const key of Object.keys(infoForUser)) {
+  console.log(key, ':', infoForUser[key]);
+}
