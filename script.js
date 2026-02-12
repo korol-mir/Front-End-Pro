@@ -23,7 +23,7 @@ while(true) {
 
     if(input === null || input === 'STOP') {
         break;
-    };
+    }
 
     if(input === 'add') {
         const newContact = prompt('Введіть контакт (name,phone,email):');
@@ -34,13 +34,16 @@ while(true) {
             email: parts[2]
         };
         book.contacts.push(newRecord);
-    };
+    }
 
     if(input === 'search') {
         const search = prompt('Введіть ім\'я');
-    };
 
-    if(search === 'Vlad' || search === 'Dima' || search === 'Anna') {
-        console.log();
+        for(let i = 0; i < book.contacts.length; i++) {
+            if(book.contacts[i].name === search) {
+                console.log(book.contacts[i]);
+                break;
+            };
+        };
     };
 };
