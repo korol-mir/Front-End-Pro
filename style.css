@@ -1,0 +1,14 @@
+.randomImg {
+    width: 800px;
+    height: 400px;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 600px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
