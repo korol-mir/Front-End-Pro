@@ -1,0 +1,23 @@
+.task{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #817ad1;
+    margin: 15px;
+    align-items: center;
+}
+
+.btn-delete {
+    background-color: #c34f67;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.delete {
+    display: none;
+};
+
