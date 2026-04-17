@@ -15,6 +15,6 @@ addTask.addEventListener('click', () => {
 
 taskList.addEventListener('click', (event) => {
     if (event.target.tagName === 'BUTTON') {
-        event.target.parentElement.classList.add('delete');
+        event.target.parentElement.remove();
     }
 });
