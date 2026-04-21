@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="eu">
     <head>
         <meta charset="UTF-8">
         <title></title>
         <link href="./style.css" rel="stylesheet">
     </head>
     <body>
+        <form id="form" novalidate>
+            <h1>We would like to help you</h1>
+            <div>
+                <label>
+                    <input type="text" name="userName" placeholder="Name">
+                    <span id="errorName" class="error">The data in the data is incorrect</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="text" name="userMessage" placeholder="Message">
+                    <span id="errorMessage" class="error">The data in the data is incorrect</span>
+                </label>
+            </div>
+            <span>
+                HOW TO UNSWER YOU?
+            </span>
+            <div>
+                <label>
+                    <input type="phone" name="userPhone" placeholder="Phone number">
+                    <span id="errorPhone" class="error">The data in the data is incorrect</span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="email" name="userEmail" placeholder="Email">
+                    <span id="errorEmail" class="error">The data in the data is incorrect</span>
+                </label>
+            </div>
+            <button>Send message</button>
+        </form>
 
         <script src="./script.js"></script>
     </body>

@@ -1,0 +1,46 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+form {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+    text-align: center;
+    width: 400px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #752424;
+}
+
+input {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: deepskyblue;
+    border-radius: 15px;
+    border: none;
+    margin: 10px;
+    width: 350px;
+}
+
+.error {
+    display: none;
+}
+
+.errorActive {
+    display: block;
+    color: red;
+    margin-top: 10px;
+}
