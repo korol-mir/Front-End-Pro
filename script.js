@@ -4,7 +4,6 @@ const formInput = document.querySelector(".js--form__input");
 const formBtn = document.querySelector(".form__btn");
 const jsTodosWrapper = document.querySelector(".js--todos-wrapper");
 
-// --- Збереження у LocalStorage ---
 function saveTodos() {
   const todos = [];
   jsTodosWrapper.querySelectorAll(".todo-item").forEach(li => {
@@ -16,7 +15,6 @@ function saveTodos() {
   localStorage.setItem("todos", JSON.stringify(todos));
 }
 
-// --- Відновлення з LocalStorage ---
 function loadTodos() {
   const todos = JSON.parse(localStorage.getItem("todos")) || [];
   todos.forEach(todo => {
@@ -41,7 +39,6 @@ function loadTodos() {
   });
 }
 
-// --- Додавання нового завдання ---
 formBtn.addEventListener("click", (e) => {
   e.preventDefault();
   if (!formInput.value.trim()) return;
@@ -68,7 +65,6 @@ formBtn.addEventListener("click", (e) => {
   saveTodos();
 });
 
-// --- Делегування подій ---
 jsTodosWrapper.addEventListener("click", (e) => {
   if (e.target.classList.contains("todo-item__delete")) {
     e.target.parentElement.remove();
@@ -81,7 +77,6 @@ jsTodosWrapper.addEventListener("click", (e) => {
   }
 });
 
-// --- Завантаження при старті ---
 document.addEventListener("DOMContentLoaded", loadTodos);
 
 
